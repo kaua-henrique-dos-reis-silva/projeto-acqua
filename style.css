@@ -1,0 +1,62 @@
+:root {
+    --fonte-primaria: "Poppins", sans-serif;
+
+    /* Cores */
+    --cor-principal: #ffffff;
+    --cor-secundaria: #f1f1f1;
+
+    --cor-texto: #1c1c1c;
+    --cor-texto-secundaria: #ffffff;
+
+    --cor-overlay: #00000085;
+
+    --cor-gradiente: linear-gradiente (to right, #34495E, #3498BD);
+}
+
+/* Limpando estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+}
+
+/* Definindo estilos gerais */
+body {
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+}
+
+.section-contador {
+    background-image: url("images/predio5.png");
+    height: 80dvh;
+}
+
+/* 
+80
+dynamic - dinâmico
+viewport - Janela de visualização
+height - altura
+*/
+
+.contador {
+    height: 100%;
+    background-color: var(--cor-overlay);
+
+    display: flex;
+    align-items: center;
+    /* alinhando os elementos no eixo vertical */
+    justify-content: space-around;
+    /* alinhando os elementos no eixo horizontal */
+}
+
+.contador p {
+    color: var(--cor-secundaria);
+}
+
+/* Provisório - Remover no futuro */
+img {
+    max-width: 100%;
+}
